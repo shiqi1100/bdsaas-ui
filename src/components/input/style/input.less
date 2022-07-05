@@ -1,0 +1,76 @@
+.dz-input {
+  position: relative;
+  display: inline-flex;
+  width: 260px;
+
+  .dz-input-inner {
+    box-sizing: border-box;
+    width: 260px;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #242934;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s ease-in;
+
+    &:focus {
+      border: 1px solid #0056ff;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: #9ca6b9;
+    }
+
+    &.is-error {
+      width: 260px;
+      height: 40px;
+      color: #f12525;
+      border: 1px solid #f12525;
+      border-radius: 4px;
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+      background: rgb(245 247 251 / 50%);
+      border: 1px solid #e1e4e8;
+    }
+
+    &.is-readonly {
+      background: rgb(245 247 251 / 50%);
+    }
+
+    &.is-suffix {
+      padding-right: 35px;
+    }
+  }
+
+  .suffix {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: translate3d(0, -50%, 0);
+
+    &.rotate {
+      transform: translate3d(0, -50%, 0) rotate(180deg);
+      transform-origin: center center;
+    }
+  }
+}
+
+//清除搜索框样式
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}
