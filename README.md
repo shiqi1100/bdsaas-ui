@@ -1,6 +1,5 @@
-# 基于 TypeScript + Vue3 + Vite 技术栈开发的 UI 组件库
-
-此组件库是本人为了学习 `Vue3` 而编写的，仅作为记录和分享~
+# BDSaas 3.0 改版 UI 组件库
+基于 TypeScript + Vue3 + Vite 技术栈开发的 UI 组件库
 
 - [x] Button 组件
 - [x] Checkbox 组件
